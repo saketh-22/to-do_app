@@ -7,8 +7,7 @@ A simple to-do list application to help you manage your tasks.
 * [Features](#features)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Contributing](#contributing)
-* [License](#license)
+
 
 ## Features
 
@@ -24,3 +23,9 @@ To install the To-Do App, simply clone this repository and run the application.
 git clone https://github.com/your-username/to-do_app.git
 cd to-do_app
 python app.py
+
+## Usage
+**
+
+
+
