@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+body {
+    background: radial-gradient(#082f50, #293f50);
+    color: #fffdfd;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background: linear-gradient(to bottom right, rgb(7, 1, 58), rgba(34, 34, 163, 0.892), blue); */
+}
+
+footer{ 
+   position: absolute;
+   bottom: 0;
+  }
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.navbar a{
+    float: left;
+    color: rgb(8, 5, 5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #406b8c;
+    color: white;
+}
+
+.active {
+    background-color: #9da0a599;
+}
+#navb {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fffcfc;
+    color: black;
+}
+
+.title {
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: center; /* Vertical center alignment */
+    align-items: center; /* Horizontal center alignment */
+    padding: 30px;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.containers {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    
+}
+#main{
+    display: block;
+
+}
+
+.topmain {
+    display: flex;
+    position: relative;
+    left: 100px;
+    width: 50%;
+    margin: 25px;
+    padding:20px;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+
+
+}
+/* .btn-grp {
+    display: flex;
+} */
+
+#displayarea {
+    padding: 1rem;
+    flex-direction: column;
+}
+#displayarea .task {
+    display: flex;
+	justify-content: space-between;
+	background-color: pink;
+	padding: 1rem;
+	border-radius: 3rem;
+	margin-bottom: 1rem;
+    margin-left: 2rem;
+    width: 60%;
+}
+
+.task .showtask {
+    flex: 1 1 0%;
+}
+
+.new {
+    background: none;
+    outline: none;
+    color: #082f50;
+    font-size: 1.125rem;
+    font-weight: 700;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.new:hover {
+    /* background: radial-gradient(#082f50, #293f50); */
+    color: rgb(243, 52, 96);
+}
+
+#main .actions {
+    
+    margin: 0 -0.5rem;
+    
+}
+
+ .actions button {
+    background-color: #293f50;
+    cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1rem;
+	font-weight: 200;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.actions button:hover {
+	opacity: 0.8;
+}
+
+.actions button:active {
+	opacity: 0.6;
+}
+
+.actions .edit {
+	background-image: linear-gradient(to right, rgb(4, 28, 132), purple);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+ .actions .delete {
+	color: crimson;
+}
+
+#add-task {
+    display: flex;
+    width: 80%;
+}
+
+#new-task {
+    flex: 1 1 0%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #082f50;
+    outline-width: 2px;
+    outline-style: double;
+    outline-color: #406b8c;
+    margin-right: 4rem;
+    margin-left: 1rem;
+    color: aliceblue;
+}
+
+#new-task-submit {
+    color: #293f50;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #23c2dbf9, #e25915);
+    cursor: pointer;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}
+
+#new-task-submit:hover {
+    opacity: 0.4;
+}
+#new-task-submit:active {
+    opacity: 0.6;
+}
+
+
+
+
+  /* class selector */

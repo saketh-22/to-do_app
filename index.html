@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- html5 specification -->
+        <meta charset="utf-8">
+        <title> to-do list</title> 
+        <!-- css link -->
+        <link rel="stylesheet" href="assets/stylesheets/main.css"> 
+    </head>
+    
+    <body>
+        <header > 
+            <h1 class="title"> Your Personal To-Do list</h1>
+
+            <nav class="head">
+                <ul id="navb">
+                    <li class="navbar"> <a class="active" href="index.html">Home </a> </li>
+                    <li class="navbar"> <a href="tasks.html">Tasks </a></li>
+                    <li class="navbar"> <a style="float: right; color: red;" href="login.html">LOGIN</a></li>
+                    <!-- <li class="navbar"> <h1 class="title"> Your  personal to-do app </h1> </li> -->
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="containers">
+            <div class="left">
+                <section id="main">
+                    <h3 class="topmain"> TODAYS TASKS</h3>
+                    <!-- <p class="sub"> You can add or update your tasks here </p> -->
+                    <div class="btn-grp">
+                        
+                        <form id="add-task">
+                            <input type="text" id="new-task" placeholder="Add your tasks here!" />
+                            <input type="submit" id="new-task-submit" value="ADD" />
+                            <!-- ID for input type=submit doesnt work with document.getelementbyid()??? -->
+                        </form>
+
+                        <div id="displayarea"></div>
+                            <!-- <div class="task">
+
+                                <div class="showtask">
+                                    
+                                    <input type="text" class="new" value="Example task" readonly>
+                                
+                                </div>
+                                
+                                <div class="actions">
+                                    <button class="edit">Edit</button>
+                                    <button class="delete">Delete</button>
+                                </div> 
+
+                            </div> -->
+                        <!-- </div> -->
+                    </div>
+                </section>
+            </div>
+            <div id="right">
+                
+            </div>
+        </div>
+        
+
+        <script src="todo.js"></script>
+
+    </body>
+    <footer>
+        <small>&copy; Saketh Pokuri</small>
+      </footer>
+</html>
