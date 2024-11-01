@@ -20,7 +20,7 @@ A simple to-do list application to help you manage your tasks.
 To install the To-Do App, simply clone this repository and run the application.
 
 ```bash
-git clone https://github.com/your-username/to-do_app.git
+git clone https://github.com/saketh-22/to-do_app.git
 cd to-do_app
 python app.py
 ```
